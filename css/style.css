@@ -1,0 +1,231 @@
+body {
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*ХЭДЭР*/
+
+.header__top {
+    background-color: #293449;
+}
+
+.search__field::placeholder,
+.header__top a {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+header p {
+    font-family: Cuprum;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
+}
+
+header span {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: #ee3643;
+}
+
+header address {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #293449;
+}
+
+.header__login,
+.header__registration {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.header__nav {
+    background-color: #293449;
+}
+
+.header__nav ul {
+    display: block;
+    padding: 0;
+    list-style: none;
+}
+.header__nav a {
+    display: block;
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+/*КАТЕГОРИИ*/
+
+.categories h2 {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    /*color: #ffffff;*/
+}
+
+.categories span {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /*color: #ffffff;*/
+    text-transform: uppercase;
+}
+
+.banner h2 {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    /*color: #ffffff;*/
+}
+
+.banner p {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /*color: #ffffff;*/
+}
+
+.button {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+/*ПОПУЛЯРНЫЕ ТОВАРЫ*/
+
+.section__header {
+    background-color: #f9f5f0;
+
+}
+
+.section__header h2 {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #32425C;
+}
+
+.product__card h3 {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    /* or 111% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.product__card span {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+    /*color: #ffffff;*/
+}
+
+.old__price {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+
+    color: #a9a9a9;
+
+}
+
+.button__buy span,
+.button__bookmark span {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    /*color: #ffffff;*/
+}
+
+.button__bookmark span {
+    color: #32425C;
+}
+
+/*Для списков*/
+
+/*
+.header__nav ul {
+    display: block;
+    padding: 0;
+    list-style: none;
+}
+*/
