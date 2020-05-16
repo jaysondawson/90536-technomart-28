@@ -167,7 +167,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="manufactures__section">
         <div class="section__header">
           <h2>Популярные производители:</h2>
           <a href="#" class="button">
@@ -217,11 +217,11 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="services__section">
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами! 
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul>
+        <ul class="services__list">
           <li>
             <span>Доставка</span>
           </li>
@@ -232,7 +232,7 @@
             <span>Кредит</span>
           </li>
         </ul>
-        <ul>
+        <ul class="services__description__list">
           <li>
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо 
@@ -256,14 +256,14 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="about__us__section">
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! 
           Огромный выбор товаров для ремонта и строительства не оставит 
           равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:</p>
-        <ul>
+        <ul class="about__us__list">
           <li><span>Деловые линии</span></li>
           <li><span>Автотрейдинг</span></li>
           <li><span>ЖелДорЭкспедиция</span></li>
@@ -272,7 +272,7 @@
           <span>Подробнее о компании</span>
         </a>
       </section>
-      <section>
+      <section class="contacts__section">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <img src="img/map.jpg" alt="Карта-мини" width="300" height="158">
@@ -284,8 +284,8 @@
     <footer>
       <a>Техномарт</a>
       <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-      <a href="tel:+78125550555"><span>+7 (812) 555-05-55</span></a>
-      <ul>
+      <a href="tel:+78125550555" class="footer__tel"><span>+7 (812) 555-05-55</span></a>
+      <ul class="footer__nav__list nav__upper">
         <li>
           <a href="#">
             <span>Компания</span>
@@ -312,7 +312,7 @@
           </a>
         </li>
       </ul>
-      <ul>
+      <ul class="footer__nav__list nav__lower">
         <li>
           <a href="#">
             <span>Материалы</span>
@@ -334,26 +334,33 @@
           </a>
         </li>
       </ul>
-      <ul>
-        <li>
-          <a href="#">
-            <span>Вконтакте</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span>Фейсбук</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span>Инстраграм</span>
-          </a>
-        </li>
-      </ul>
-      <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
-      <p>Обратная связь: mail@htmlacademy.ru</p>
-      <p>Разработано – <a href="https://htmlacademy.ru/study">htmlacademy.ru</a></p>
+      <div class="footer__lower__part">
+        <p class="footer__lower__part rights">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+        <ul class="footer__lower__part list">
+          <li>
+            <a href="#">
+              <span>Вконтакте</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Фейсбук</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Инстраграм</span>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__lower__part feedback">Обратная связь: 
+          <a href="#">mail@htmlacademy.ru</a>
+        </p>
+        <p class="footer__lower__part development">Разработано – 
+          <a href="https://htmlacademy.ru/study">htmlacademy.ru</a>
+        </p>
+
+      </div>
     </footer>
   </body>
 </html>
