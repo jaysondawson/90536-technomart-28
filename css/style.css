@@ -158,6 +158,7 @@ header address {
     text-transform: uppercase;
     color: #ffffff;
     background-color: #ee3643;
+    border: 0 none;
 }
 
 /*СЕКЦИЯ ПОПУЛЯРНЫЕ ТОВАРЫ*/
@@ -389,6 +390,37 @@ footer {
     color: #ffd180;
 }
 
+/*МОДАЛЬНОЕ ОКНО*/
+/*ОФОРМЛЕНИЕ ЗАКАЗА*/
+
+.popup__purchase span {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.popup__purchase ::placeholder {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: #A9A9A9;}
+
+.popup__purchase input,
+.popup__purchase textarea {
+    border: 2px solid #C5C5C5;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+
+
+/*КАРТА*/
+
 /*СТРАНИЦА КАТАЛОГА*/
 /*ХЭДЭР*/
 
@@ -503,7 +535,7 @@ footer {
     background-color: #f7f3eC;
 }
 
-.filter__button {
+.button__filter {
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
@@ -646,9 +678,22 @@ footer {
     margin: 0;
 }
 
+/*МОДАЛЬНОЕ ОКНО*/
+/*УВЕДОМЛЕНИЕ О ДОБАВЛЕНИИ ТОВАРА В КОРЗИНУ*/
 
+.popup__order-notification span {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
 
-
+.button__back {
+    color: #000000;
+    background-color: #ffffff;
+}
 
 
 
