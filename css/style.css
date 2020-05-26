@@ -1,6 +1,6 @@
 body {
-    font-family: 'Cuprum', 'Arial', sans-serif;
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     margin: 0;
@@ -40,7 +40,7 @@ a {
 
 .search__field::placeholder,
 .header__top a {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -50,7 +50,7 @@ a {
 }
 
 header p {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: italic;
     font-weight: normal;
     font-size: 16px;
@@ -60,7 +60,7 @@ header p {
 }
 
 header span {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -69,7 +69,7 @@ header span {
 }
 
 header address {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -79,7 +79,7 @@ header address {
 
 .header__login,
 .header__registration {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -100,7 +100,7 @@ header address {
 
 .header__nav a {
     display: block;
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -111,7 +111,7 @@ header address {
 /*СЕКЦИЯ КАТЕГОРИИ*/
 
 .categories__section h2 {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -121,7 +121,7 @@ header address {
 }
 
 .categories__section  span {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -131,7 +131,7 @@ header address {
 }
 
 .banner h2 {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -140,7 +140,7 @@ header address {
 }
 
 .banner p {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -150,7 +150,7 @@ header address {
 }
 
 .button {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -169,7 +169,7 @@ header address {
 }
 
 .section__header h2 {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -193,7 +193,7 @@ header address {
 /*СЕКЦИЯ СЕРВИСЫ*/
 
 .services__section h2 {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -205,7 +205,7 @@ header address {
 }
 
 .services__section p {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -224,7 +224,7 @@ header address {
 }
 
 .services__list span {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -245,7 +245,7 @@ header address {
 }
 
 .services__description__list h3 {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -262,7 +262,7 @@ header address {
 
 /*СЕКЦИЯ О НАС*/
 .about__us__section h2 {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -273,7 +273,7 @@ header address {
 }
 
 .about__us__section p {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -290,7 +290,7 @@ header address {
 }
 
 .about__us__list span {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -301,7 +301,7 @@ header address {
 /*СЕКЦИЯ КОНТАКТЫ*/
 
 .contacts__section h2{
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -312,7 +312,7 @@ header address {
 }
 
 .contacts__section p{
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -325,7 +325,7 @@ header address {
 
 footer address,
 .footer__tel {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -341,7 +341,7 @@ footer {
 .footer__nav__list {
     display: block;
     padding: 0;
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -364,7 +364,7 @@ footer {
 .footer__bottom .rights,
 .footer__bottom .feedback,
 .footer__bottom .development {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -394,7 +394,7 @@ footer {
 /*ОФОРМЛЕНИЕ ЗАКАЗА*/
 
 .popup__purchase span {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -403,7 +403,7 @@ footer {
 }
 
 .popup__purchase ::placeholder {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -425,7 +425,7 @@ footer {
 /*ХЭДЭР*/
 
 .account__name {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -435,7 +435,7 @@ footer {
 
 .account__order,
 .account__logout {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -455,7 +455,7 @@ footer {
 }
 
 .catalog__header h2{
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -473,7 +473,7 @@ footer {
 }
 
 .breadcrumbs a {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -488,7 +488,7 @@ footer {
 }
 
 .filters h3 {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -498,7 +498,7 @@ footer {
 }
 
 .filters legend {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -517,7 +517,7 @@ footer {
 
 .filter__manufacturers__list li,
 .filter__power__list li {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -538,7 +538,7 @@ footer {
 }
 
 .button__filter {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -553,7 +553,7 @@ footer {
 /*СОРТИРОВКА*/
 
 .sorting h2 {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -571,7 +571,7 @@ footer {
 }
 
 .sorting__list a{
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -586,7 +586,7 @@ footer {
 /*КАРТОЧКИ ТОВАРОВ*/
 
 .product__card h3 {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -596,7 +596,7 @@ footer {
 }
 
 .product__card span {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -605,7 +605,7 @@ footer {
 }
 
 .old__price {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -622,7 +622,7 @@ footer {
 
 .button__buy span,
 .button__bookmark span {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -649,7 +649,7 @@ footer {
 }
 
 .catalog__pages__list a{
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -658,7 +658,7 @@ footer {
 }
 
 .about__perforaters__section h2 {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -671,7 +671,7 @@ footer {
 
 
 .about__perforaters__section p {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -684,7 +684,7 @@ footer {
 /*УВЕДОМЛЕНИЕ О ДОБАВЛЕНИИ ТОВАРА В КОРЗИНУ*/
 
 .popup__order-notification span {
-    font-family: Cuprum;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -731,4 +731,8 @@ footer {
     margin: 0;
     list-style: none;
 }
+
+
+font-family: "Cuprum", "Arial", sans-serif;
+font-family: "PT Sans", "Arial", sans-serif;
 */
