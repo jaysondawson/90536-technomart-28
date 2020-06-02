@@ -32,13 +32,17 @@ a {
 
 .header__top {
     background-color: #293449;
+    
+}
+
+.header__top .container {
+    height: 47px;
 }
 
 .header__top h2 {
     margin: 0;
 }
 
-.search__field::placeholder,
 .header__top a {
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
@@ -46,7 +50,102 @@ a {
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
+}
+
+.header__bottom{
+    width: inherit;
+    background-color: #f4f7f9;
+}
+
+.header__bottom .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__info {
+    display: flex;
+    display: flex;
+    align-items: center;
+    width: inherit;
+    height: 158px;
+}
+
+.header__info p {
+    width: 197px;
+    margin-left: 30px;
+}
+
+.header__info__address {
+    width: 270px;
+}
+
+.header__info__contacts {
+    margin-left: 93px;
+}
+
+.header__info__contacts a {
+    display: block;
+    width: 264px;
+    height: 39px;
+}
+
+.header__info__autorize {
+    margin-left: 70px;
+}
+
+.icon-logo__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: inherit;
+    background-color: #ee3643;
+}
+
+.icon-logo {
+    fill: #ffffff;
+    fill-rule: evenodd;
+}
+
+.search__field::placeholder {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
     background-color: transparent;
+}
+
+
+.bookmarks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: inherit;
+    background: #161d29;
+}
+
+.basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: inherit;
+    background: #161d29;
+
+}
+
+
+
+.icon-purchase__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: inherit;
+    background-color: #63a63e;
 }
 
 header p {
@@ -59,13 +158,14 @@ header p {
     margin: 0;
 }
 
-header span {
+.header__info__contacts a {
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
     color: #ee3643;
+    border: 3px solid #ffffff;
 }
 
 header address {
@@ -75,6 +175,12 @@ header address {
     font-size: 14px;
     line-height: 24px;
     color: #293449;
+}
+
+.header__info__autorize {
+    display: flex;
+    justify-content: space-between;
+    width: 281px;
 }
 
 .header__login,
@@ -87,12 +193,29 @@ header address {
     color: #000000;
 }
 
+.header__login {
+    width: 121px;
+    height: 45px;
+    background-color: #ffffff;
+}
+
+.header__registration{
+    width: 150px;
+    height: 45px;
+    background-color: #ffffff;
+
+}
+
 .header__nav {
     background-color: #293449;
 }
 
 .header__nav ul {
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: inherit;
+    height: 60px;
     padding: 0;
     list-style: none;
     margin: 0;
@@ -109,6 +232,14 @@ header address {
 }
 
 /*СЕКЦИЯ КАТЕГОРИИ*/
+.categories__section {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: 409px;
+    margin-top: 59px;
+    background-color: lavender;
+}
 
 .categories__section h2 {
     font-family: "Cuprum", "Arial", sans-serif;
@@ -130,7 +261,34 @@ header address {
     text-transform: uppercase;
 }
 
-.banner h2 {
+.categories__section__list-1,
+.categories__section__list-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories__section__list-2 {
+    margin-top: 20px;
+}
+
+.categories__section__materials,
+.categories__section__instruments,
+.categories__section__equipment, 
+.categories__section__sale,
+.categories__section__delivery {
+    width: 300px;
+    height: 123px;
+    background-color: lightcoral;
+}
+
+.categories__section__banner{
+    width: 620px;
+    height: 266px;
+    background-color: lightseagreen;
+}
+
+
+.categories__section__banner h2 {
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -139,7 +297,7 @@ header address {
     /*color: #ffffff;*/
 }
 
-.banner p {
+.categories__section__banner p {
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -147,6 +305,12 @@ header address {
     line-height: 24px;
     /*color: #ffffff;*/
     margin: 0;
+}
+
+.categories__section__vertical-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .button {
@@ -162,11 +326,29 @@ header address {
 }
 
 /*СЕКЦИЯ ПОПУЛЯРНЫЕ ТОВАРЫ*/
+.pop-products__section {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    margin-top: 59px;
+}
 
 .section__header {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    width: inherit;
+    height: 89px;
     background-color: #f9f5f0;
 
 }
+
+.pop-products__header__button {
+    width: 192px;
+    height: 38px;
+    margin-left: 437px;
+}
+
 
 .section__header h2 {
     font-family: "Cuprum", "Arial", sans-serif;
@@ -177,22 +359,49 @@ header address {
     text-transform: uppercase;
     color: #32425C;
     margin: 0;
+    margin-left: 30px;
 }
 
+.pop-products__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
 
 /*СЕКЦИЯ ПОЛУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ*/
+.manufactures__section {
+    width: inherit;
+    height: 89px;
+    margin-top: 59px;
+}
 
-.manufactures__section ul {
-    display: block;
+.manufactures__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin:  0;
+    margin-top: 20px;
     padding: 0;
     list-style: none;
-    
+    background-color: lavender;
+}
+
+.manufactures__header__button {
+    width: 192px;
+    height: 38px;
+    margin-left: 334px;
+
 }
 
 /*СЕКЦИЯ СЕРВИСЫ*/
+.services__section {
+    width: inherit;
+    height: 522px;
+    background-color: lavender;
+}
 
-.services__section h2 {
+.services__header h2 {
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -216,7 +425,8 @@ header address {
 }
 
 .services__list {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     list-style: none;
     margin: 0;
@@ -238,7 +448,8 @@ header address {
 }
 
 .services__description__list {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -283,7 +494,8 @@ header address {
 }
 
 .about__us__list {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -585,6 +797,12 @@ footer {
 
 /*КАРТОЧКИ ТОВАРОВ*/
 
+.product__card {
+    width: 220px;
+    height: 318px;
+    background-color: lavender;
+}
+
 .product__card h3 {
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
@@ -706,22 +924,20 @@ footer {
     justify-content: space-between;
     width: 940px;
     margin: 0 auto;
-    background-color: rosybrown;
+    /*background-color: rosybrown;*/
 }
 
-.header__top{
-    background-color: #293449;
-}
-
-.header__bottom{
-    width: inherit;
-    background-color: #f4f7f9;
-}
 
 /*ПОСТРОЕНИЕ СЕТОК*/
 /*КАТАЛОГ*/
 
 /*Для списков*/
+
+
+/*FLEX
+
+display: flex;
+justify-content: center;
 
 
 /*
