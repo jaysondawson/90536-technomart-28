@@ -95,11 +95,19 @@ a {
 
 .icon-logo__wrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
     width: 220px;
     height: inherit;
     background-color: #ee3643;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .icon-logo {
@@ -323,6 +331,7 @@ header address {
     color: #ffffff;
     background-color: #ee3643;
     border: 0 none;
+    border-radius: 3px;
 }
 
 /*СЕКЦИЯ ПОПУЛЯРНЫЕ ТОВАРЫ*/
@@ -372,8 +381,13 @@ header address {
 /*СЕКЦИЯ ПОЛУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ*/
 .manufactures__section {
     width: inherit;
-    height: 89px;
+    min-width: 419px;
     margin-top: 59px;
+    background-color: lightblue;
+}
+
+.manufactures__section .section__header {
+    height: 89px;
 }
 
 .manufactures__list {
@@ -394,11 +408,26 @@ header address {
 
 }
 
+.manufactures__item {
+    width: 220px;
+    height: 145px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA;
+}
+
+
+
 /*СЕКЦИЯ СЕРВИСЫ*/
 .services__section {
     width: inherit;
-    height: 522px;
-    background-color: lavender;
+    min-height: 522px;
+    margin-top: 50px;
+    background-color: #f1f5f7;
+}
+
+.services__header {
+    margin-top: 64px;
 }
 
 .services__header h2 {
@@ -414,14 +443,23 @@ header address {
 }
 
 .services__section p {
+    display: block;
+    width: 394px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
-    color: #000000;
     margin: 0;
+    margin-top: 25px;
+    color: #000000;
+}
 
+.services__section__wrapper {
+    display: flex;
+    min-height: 189px;
+    margin-top: 67px;
+    background-color: lightblue;
 }
 
 .services__list {
@@ -433,7 +471,7 @@ header address {
 
 }
 
-.services__list span {
+.services__list a {
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -444,7 +482,17 @@ header address {
     display: flex;
     align-items: center;
 
-    color: #32425C;
+    color: #ffffff;
+}
+
+.services__item {
+    display: flex;
+    align-items: center;
+    width: 218px;
+    height: 61px;
+    padding-left: 22px;
+    background: #32425C;
+    box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
 }
 
 .services__description__list {
@@ -453,6 +501,11 @@ header address {
     padding: 0;
     margin: 0;
     list-style: none;
+    background-color: azure;
+}
+
+.services__description__list {
+    margin-left: 80px;
 }
 
 .services__description__list h3 {
@@ -471,7 +524,41 @@ header address {
     margin: 0;
 }
 
+.delivery__item p {
+    width: 279px;
+}
+
+.guarantee__item p {
+    width: 314px;
+}
+
+.credit__item p {
+    width: 279px;
+    margin-bottom: 27px;
+}
+
+.credit__button {
+    display: block;
+    width: 195px;
+    min-height: 38px;
+}
+
 /*СЕКЦИЯ О НАС*/
+
+.about__us_contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    margin-top: 70px;
+    background-color: lavender;
+}
+
+.about__us__section {
+    width: 450px;
+    min-height: 496px;
+    background-color: lightblue;
+}
+
 .about__us__section h2 {
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
@@ -493,6 +580,14 @@ header address {
     margin: 0;
 }
 
+.about__us__section .paragraph__first {
+    margin-top: 24px;
+}
+
+.about__us__section .paragraph__second{
+    margin-top: 24px;
+}
+
 .about__us__list {
     display: flex;
     flex-direction: column;
@@ -510,7 +605,25 @@ header address {
     color: #000000;
 }
 
+.about__us__item {
+    margin-top: 13px;
+}
+
+.about__us__button {
+    display: block;
+    width: 192px;
+    min-height: 38px;
+    margin-top: 26px;
+}
+
 /*СЕКЦИЯ КОНТАКТЫ*/
+.contacts__section {
+    display: flex;
+    flex-direction: column;
+    width: 301px;
+    background-color: lightblue;
+}
+
 
 .contacts__section h2{
     font-family: "Cuprum", "Arial", sans-serif;
@@ -524,16 +637,55 @@ header address {
 }
 
 .contacts__section p{
-    font-family: "Cuprum", "Arial", sans-serif;
+    font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 24px;
     color: #000000;
     margin: 0;
 }
 
+.contacts__section .paragraph__first {
+    margin-top: 24px;
+    margin-bottom: 76px;
+}
+
+.contacts__button {
+    display: block;
+    width: 245px;
+    min-height: 38px;
+    margin-top: 26px;
+}
+
 /*ФУТЭР*/
+.footer__top {
+    min-height: 193px;
+}
+
+.footer__logo__adress__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 220px;
+    height: 68px;
+    background-color: #ee3643;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    margin-bottom: 27px;
+
+}
 
 footer address,
 .footer__tel {
@@ -549,9 +701,19 @@ footer {
     background-color: #32425c;
 }
 
-    
+.footer__top .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 42px;
+}
+
 .footer__nav__list {
-    display: block;
+    display: flex;
     padding: 0;
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
@@ -560,11 +722,32 @@ footer {
     line-height: 24px;
     margin: 0;
     list-style: none;
+    /*background-color: lightblue;*/
+}
+
+.nav__top {
+    display: flex;
+    justify-content: space-between;
+    width: 547px;
+    margin-bottom: 42px;
 }
 
 .nav__top a{
     color: #f3f7f9;
 }
+
+.nav__flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 524px;
+
+}
+
 .nav__bottom a{
     color: #ffd180;
 }
@@ -800,6 +983,8 @@ footer {
 .product__card {
     width: 220px;
     height: 318px;
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA;
     background-color: lavender;
 }
 
