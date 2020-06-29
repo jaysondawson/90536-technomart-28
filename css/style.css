@@ -102,6 +102,7 @@ a {
 }
 
 .icon-logo__wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,7 +116,15 @@ a {
     width: 220px;
     height: inherit;
     background-color: #ee3643;
-    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.icon-logo__wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 220px;
+    height: 5px;
+    background-color: #b32b34;
 }
 
 .icon-logo {
@@ -1119,6 +1128,32 @@ footer {
     min-height: 38px;
     cursor: pointer;
 }
+
+.popup__map {
+    position: relative;
+    width: 943px;
+    height: 449px;
+    margin: 0 auto;
+    border-top: 7px solid #ff5257;
+    box-shadow: 0 10px 16px 3px  rgb(41, 52, 73, 0.4);
+    background-color: lavender;
+}
+
+.popup__map__close {
+    position: absolute;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/svg-technomart/icon-close.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+}
+
 
 /*КАРТА*/
 
