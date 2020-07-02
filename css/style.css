@@ -668,11 +668,6 @@ header address {
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
-    /* identical to box height, or 143% */
-
-    display: flex;
-    align-items: center;
-
     color: #ffffff;
 }
 
@@ -972,6 +967,10 @@ footer {
     list-style: none;
 }
 
+.footer__bottom__list li {
+    margin-right: 4px;
+}
+
 .footer__bottom__list a{ 
     display: flex;
     justify-content: center;
@@ -1029,12 +1028,10 @@ footer {
     height: 430px;
     margin: 0 auto;
     border-top: 7px solid #ff5257;
-    /*background-color: lavender;*/
     box-shadow: 0 10px 16px 3px  rgb(41, 52, 73, 0.4);
 }
 
 .popup__purchase__close {
-    position: absolute;
     position: absolute;
     top: 9px;
     right: 9px;
@@ -1289,7 +1286,7 @@ footer {
 
 
 /*СЕКЦИЯ ФИЛЬТРЫ*/
-
+/*ОБЩИЕ*/
 .catalog__filters {
     width: 220px;
     height: 720px;
@@ -1298,6 +1295,7 @@ footer {
     border: 0 none;
     background-color: lavender;
 }
+
 
 .catalog__filters fieldset {
     border: none;
@@ -1323,12 +1321,14 @@ footer {
     background-color: #f7f3ec;
 }
 
-.filter__price,
-.filter__manufacturers,
-.filter__power {
+.filter__price {
     padding: 0;
     margin: 0;
     margin-top: 14px;
+}
+
+.filter__manufacturers {
+    margin-top: 42px;
 }
 
 .filter__price legend,
@@ -1345,13 +1345,18 @@ footer {
     margin: 0;
 }
 
+.filter__manufacturers legend {
+    margin-bottom: 17px;
+}
+
 .catalog__filters ul {
     display: block;
     padding: 0;
     margin: 0;
     list-style: none;
-}
+    background-color: lightseagreen;
 
+}
 
 .filter__manufacturers__list li,
 .filter__power__list li {
@@ -1360,9 +1365,16 @@ footer {
     font-weight: normal;
     font-size: 15px;
     line-height: 19px;
+    text-transform: uppercase;
     color: #000000;
+    margin-bottom: 20px;
 }
 
+.filter__manufacturers__list li:last-child {
+    margin: 0;
+}
+
+/*ЦЕНА*/
 .range__picker__wrapper {
     display: flex;
     justify-content: center;
@@ -1371,6 +1383,27 @@ footer {
     height: 80px;
     margin-top: 11px;
     border-radius: 3px;
+}
+
+.range__picker__wrapper,
+.launch__price,
+.final__price {
+    border: none;
+    background-color: #f7f3eC;
+}
+
+.filter__price__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    margin-top: 9px;
+}
+
+.launch__price,
+.final__price {
+    width: 95px;
+    height: 38px;
 }
 
 .range__picker {
@@ -1415,36 +1448,39 @@ footer {
     left: 140px;
 }
 
-.range__picker__wrapper,
-.launch__price,
-.final__price {
-    border: none;
-    background-color: #f7f3eC;
+/*ПИТАНИЕ*/
+
+.filter__power {
+    padding: 0;
+    margin: 0;
+    margin-top: 46px;
 }
 
-.filter__price__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: inherit;
-    margin-top: 9px;
+.filter__power legend {
+    margin-bottom: 23px;
 }
 
-.launch__price,
-.final__price {
-    width: 95px;
-    height: 38px;
-    background-color: lightblue;
+.filter__power__list:last-child {
+    margin-bottom: 37;
 }
+
+/*КНОПКА*/
 
 .button__filter {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    min-height: 38px;
+    padding-left: 78px;
+    padding-right: 78px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 18px;
+    text-transform: uppercase;
     color: #000000;
-    background-color: transparent;
+    background-color: lightseagreen;
     border: solid 1px  #e5e5e5;
 }
 
@@ -1452,7 +1488,16 @@ footer {
 
 /*СОРТИРОВКА*/
 
-.sorting h2 {
+.sorting__container {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    margin-top: 50px;
+    padding: 0;
+    background-color: lavender;
+}
+
+.sorting__container h2 {
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -1461,26 +1506,57 @@ footer {
     text-transform: uppercase;
     color: #000000;
     margin: 0;
+    margin-left: 19px;
+}
+
+.sorting__content {
+    display: flex;
+    align-items: center;
+    width: 459px;
+    height: inherit;
+    margin-left: 140px;
+    background-color: lavenderblush;
+
 }
 
 .sorting__list {
-    display: block;
+    display: flex;
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.sorting__list a{
+.sorting__list a {
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 18px;
+    text-transform: uppercase;
     color: #c0bdB8;
 }
 
-.active a{
+.active a {
     color: #ee3643;
+}
+
+.sorting__list.types {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 354px;
+    height: inherit;
+    background-color: lightblue;
+}
+
+.sorting__list.order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 43px;
+    height: inherit;
+    margin-left: 40px;
+    background-color: lightblue;
 }
 
 /*КАРТОЧКИ ТОВАРОВ*/
@@ -1533,9 +1609,6 @@ footer {
     text-transform: uppercase;
     text-align: center;
 }
-
-
-
 
 .old__price {
     font-family: "PT Sans", "Arial", sans-serif;
@@ -1650,25 +1723,84 @@ footer {
     color: #32425C;
 }
 
+/*КАТАЛОГ. ТОВАРЫ*/
 
+.catalog-products__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 25px;
+}
 
+.catalog-products__list .product__card {
+    margin-bottom: 18px;
+}
 
+.product__card.last {
+    margin-bottom: 0px;
+}
 
-/*СТРАНИЦЫ КАТАЛОГА*/
-
+/*НУМЕРАЦИЯ СТРАНИЦ КАТАЛОГА*/
 .catalog__pages__list{
-    display: block;
+    display: flex;
     padding: 0;
+    margin: 0;
+    margin-left: 25px;
+    margin-top: 48px;
+    margin-bottom: 59px;
+    list-style: none;
+}
+
+.catalog__pages__item,
+.catalog__pages__item-next {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+}
+
+.catalog__pages__item.active {
+    background-color: #ee3643;
+    border-color: transparent;
+}
+
+.catalog__pages__item:first-child a {
+    color: #ffffff;
+}
+
+.catalog__pages__item-next {
+    width: 140px;
     margin: 0;
 }
 
-.catalog__pages__list a{
+.catalog__pages__list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 18px;
     color: #000000;
+}
+
+
+/*КАТАЛОГ. О ПЕРФОРАТОРАХ*/
+.about__perforaters__section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    height: 261px;
+}
+
+.about__perforaters__section {
+    background-color: #f2f6f8;
 }
 
 .about__perforaters__section h2 {
@@ -1679,8 +1811,9 @@ footer {
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
-    background-color: #f2f6f8;
     margin: 0;
+    margin-top: 64px;
+    margin-bottom: 25px;
 }
 
 
@@ -1696,6 +1829,14 @@ footer {
 
 /*МОДАЛЬНОЕ ОКНО*/
 /*УВЕДОМЛЕНИЕ О ДОБАВЛЕНИИ ТОВАРА В КОРЗИНУ*/
+.popup__order-notification {
+    position: relative;
+    width: 620px;
+    height: 283px;
+    margin: 0 auto;
+    border-top: 7px solid #ff5257;
+    box-shadow: 0 10px 16px 3px  rgb(41, 52, 73, 0.4);
+}
 
 .popup__order-notification span {
     font-family: "Cuprum", "Arial", sans-serif;
@@ -1706,11 +1847,55 @@ footer {
     color: #000000;
 }
 
+.popup__order-notification__close {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/svg-technomart/icon-close.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+}
+
+.popup__order-notification__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 171px;
+}
+
+.popup__order-notification__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 111px;
+    background-color: #f1f1f1;
+}
+
+.button__order,
 .button__back {
+    width: 192px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.button__back {
+    margin-left: 10px;
     color: #000000;
     background-color: #ffffff;
 }
 
+
+/*
+    width: 394px;
+    height: 38px;
+*/
 
 /*ПОСТРОЕНИЕ СЕТОК*/
 /*ГЛАВНАЯ*/
