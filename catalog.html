@@ -8,40 +8,49 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="catalog header">
+    <header class="index header">
       <h1 class="visually-hidden">
         «Техномарт» интернет-магазин строительных материалов и инструментов для ремонта
       </h1>
       <div class="header__top">
         <div class="container">
-          <a href="index.html">Техномарт</a>
+          <div class="icon-logo__wrapper">
+            <h2 class="icon-logo">Техномарт</h2>
+           <!-- <img src="img/svg-technomart/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарта">-->
+          </div>
           <form method="POST" action="https://echo.htmlacademy.ru">
             <input class="search__field" type="search" placeholder="Поиск" aria-label="Поле поиска">
             <input type="submit" value="" aria-label="Кнопка Поиск">
           </form>
-          <a href="#">Закладки: 0</a>
-          <a href="#">Корзина: 10</a>
-          <a href="#">Оформить заказ</a>
+          <a class="bookmarks" href="#">Закладки: 0</a>
+          <a class="basket" href="#">Корзина: 10</a>
+          <a class="icon-purchase__wrapper" href="#">Оформить заказ</a>
         </div>
       </div>
       <div class="header__bottom">
         <div class="container">
           <div class="header__bottom header__info">
             <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-            <a href="tel:+78125550555"><span>+7 (812) 555-05-55</span></a>
-            <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+            <div class="header__info__contacts">
+              <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+              <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+            </div>
             <div class="account">
-              <a href="#">
-                <span class="account account__name">Равшан Джамшутович</span>
-              </a>
-              <a href="#" aria-label="Выйти из учетной записи"></a>
-              <a href="#">
-                <span class="account account__order">Мои заказы</span>
-              </a>
-              <div class="account account__separator"></div>
-              <a href="#">
-                <span class="account account__logout">Личный кабинет</span>
-              </a>
+              <div class="account__info">
+                <a  class="account__name" href="#">
+                  <span>Равшан Джамшутович</span>
+                </a>
+                <a href="#" aria-label="Выйти из учетной записи"></a>
+              </div>
+              <div class="account__settings">
+                <a class="account__order href="#">
+                  <span">Мои заказы</span>
+                </a>
+                <div class="account__separator"></div>
+                <a class="account__logout" href="#">
+                  <span>Личный кабинет</span>
+                </a>
+              </div>
             </div>
           </div>
           <nav class="header__nav">
@@ -68,94 +77,98 @@
                 <a href="#">Контакты</a>
               </li>
             </ul>
-          </nav>    
+          </nav>
         </div>
       </div>
-    </header>
+    </header>  
+
+    <div class="container">
+      <div class="catalog breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__home">
+              <a href="index.html" aria-label="Главная"></a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#">Инструмент</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a>Перфораторы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <main class="catalog">
       <div class="container">
-        <div class="catalog catalog__header">
+        <div class="catalog__header">
           <h2>Перфораторы</h2>
         </div>
       </div>
       <div class="container">
-        <div class="catalog breadcrumbs">
-          <ul>
-            <li>
-                <a href="index.html" aria-label="Главная"></a>
-            </li>
-            <li>
-              <a href="#">Каталог</a>
-            </li>
-            <li>
-              <a href="#">Инструмент</a>
-            </li>
-            <li>
-              <a>Перфораторы</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="container">
-        <section class="catalog filters">
+        <section class="catalog__filters">
           <h3>Фильтр:</h3>
           <form method="POST" action="https://echo.htmlacademy.ru">
-          <fieldset class="filters filter__price">
+          <fieldset class="filter__price">
             <legend>Цена:</legend>
-            <div class="filter__price range__picker__wrapper">
+            <div class="range__picker__wrapper">
               <div class="range__picker">
-                  <div class="range__picker range__picker__from" aria-label="Ползунок начального значения цены"></div>
-                  <div class="range__picker range__picker__to" aria-label="Ползунок конечного значения цены"></div>
+                <div class="range__picker_active"></div>
+                  <div class="toggle__from" aria-label="Ползунок начального значения цены"></div>
+                  <div class="toggle__to" aria-label="Ползунок конечного значения цены"></div>
               </div>
             </div>
-            <input class="filter__price launch__price" type="text" value="0" aria-label="Поле ввода начального значения цены">
-            <span>—</span>
-            <input class="filter__price final__price" type="text" value="30000" aria-label="Поле ввода конечного значения цены">
+            <div class="filter__price__wrapper">
+              <input class="launch__price" type="text" value="0" aria-label="Поле ввода начального значения цены">
+              <span>—</span>
+              <input class="final__price" type="text" value="30000" aria-label="Поле ввода конечного значения цены">
+            </div>
           </fieldset>
-          <fieldset class="filters filter__manufacturers">
+          <fieldset class="filter__manufacturers">
             <legend>Производители:</legend>
-              <ul class="filter__manufacturers filter__manufacturers__list">
+              <ul class="filter__manufacturers__list">
                   <li>
-                      <label>
-                          <input type="checkbox">
-                          <span>Bosch</span>
-                      </label>                     
+                    <label>
+                      <input type="checkbox">
+                      <span>Bosch</span>
+                    </label>                     
                   </li>
                   <li>
-                      <label>
-                          <input type="checkbox">
-                          <span>Bosch</span>
-                      </label>
+                    <label>
+                      <input type="checkbox">
+                      <span>Bosch</span>
+                    </label>
                   </li>
                   <li>
-                      <label>
-                          <input type="checkbox">
-                          <span>Интерскол</span>
-                      </label>
+                    <label>
+                      <input type="checkbox">
+                      <span>Интерскол</span>
+                    </label>
                   </li>
                   <li>
-                      <label>
-                              <input type="checkbox">
-                              <span>Makita</span>
-                      </label>
+                    <label>
+                      <input type="checkbox">
+                      <span>Makita</span>
+                    </label>
                   </li>
                   <li>
-                      <label>
-                              <input type="checkbox">
-                              <span>DeWalt</span>
-                      </label>
+                    <label>
+                      <input type="checkbox">
+                      <span>DeWalt</span>
+                    </label>
                   </li>
                   <li>
-                      <label>
-                              <input type="checkbox">
-                              <span>Hitachi</span>
-                      </label>
+                    <label>
+                      <input type="checkbox">
+                      <span>Hitachi</span>
+                    </label>
                   </li>
                 </ul>
           </fieldset>
-          <fieldset class="filters filter__power">
+          <fieldset class="filter__power">
             <legend>Питание:</legend>
-            <ul class="filter__power filter__power__list">
+            <ul class="filter__power__list">
                 <li>
                     <input type="radio">
                     <span>Аккумуляторные</span>
