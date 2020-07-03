@@ -36,7 +36,7 @@ a {
 }
 
 .header__top .container {
-    height: 47px;
+    height: 42px;
 }
 
 .header__top h2 {
@@ -54,6 +54,7 @@ a {
 
 .header__bottom{
     width: inherit;
+    height: 278px;
     background-color: #f4f7f9;
 }
 
@@ -137,6 +138,19 @@ a {
     color: #ffffff;
 }
 
+/*ПОИСК В ХЭДЕРЕ*/
+.search__form {
+    position: relative;
+}
+
+.search__field {
+    width: 270px;
+    height: 42px;
+    border: none;
+    padding-left: 42px;
+    background-color: #293449;
+}
+
 .search__field::placeholder {
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
@@ -145,6 +159,28 @@ a {
     line-height: 24px;
     color: #ffffff;
     background-color: transparent;
+}
+
+.search__button {
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/svg-technomart/icon-search.svg);
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*ПОИСК: СОСТОЯНИЯ*/
+.search__field:hover {
+    background-color: #212a3a;}
+
+.search__field:focus {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 
@@ -163,7 +199,7 @@ a {
     align-items: center;
     width: 150px;
     height: inherit;
-    background: #161d29;
+    background-color: #293449;
 
 }
 
@@ -246,29 +282,49 @@ header address {
 
 }
 
-.header__nav {
-    background-color: #293449;
+/*НАВИГАЦИЯ*/
+.header__nav__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #32425c;
+    border-bottom: 5px solid #293449;    
 }
 
-.header__nav ul {
+.header__nav__list {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     width: inherit;
-    height: 60px;
     padding: 0;
     list-style: none;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.header__nav li {
+    display: flex;
+    align-items: center;
 }
 
 .header__nav a {
     display: block;
+    padding: 20px 30px 17px;
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 17px;
+    line-height: 18px;
     color: #ffffff;
+}
+
+.header__nav a:hover {
+    background-color: #293449;
+}
+
+.header__nav a:active {
+    color: rgb(255, 255, 255, 0.5);
 }
 
 /*СЕКЦИЯ КАТЕГОРИИ*/
@@ -1564,23 +1620,25 @@ footer {
 .product__card {
     position: relative;
     width: 220px;
-    height: 311px;
-    box-sizing: border-box;
-    border: 1px solid #eaeaea; 
+    height: 318px;
 }
 
-.product__card:hover {
-    border: none;
-    box-shadow: 0 10px 25px 0 rgb(41, 52, 73, 0.5);
-}
 
 .product__card__wrapper {
     display: flex;
     flex-direction: column;
     width: 220px;
-    height: 311px;
+    height: 318px;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea; 
+
+    
 }
 
+.product__card__wrapper:hover {
+    border: transparent;
+    box-shadow: 0 10px 25px 0 rgb(41, 52, 73, 0.5);
+}
 
 .product__card h3 {
     font-family: "PT Sans", "Arial", sans-serif;
