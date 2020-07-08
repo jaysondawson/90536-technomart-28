@@ -147,7 +147,7 @@ a {
     width: 270px;
     height: 42px;
     border: none;
-    padding-left: 42px;
+    padding-left: 47px;
     background-color: #293449;
 }
 
@@ -372,6 +372,7 @@ header address {
 .categories__section__equipment, 
 .categories__section__sale,
 .categories__section__delivery {
+    position: relative;
     width: 277px;
     height: 123px;
     padding-left: 23px;
@@ -401,6 +402,16 @@ header address {
     box-sizing: border-box;
     background-color: rgb(255, 255, 255, 0.3);
     color: #ffffff;
+}
+
+.new::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 59px;
+    background-image: url(../img/new-flag.png);
 }
 
 .categories__section__instruments{
@@ -471,6 +482,36 @@ header address {
     color: #ffffff;
 }
 
+/*ИКОНКИ КАТЕГОРИЙ*/
+.materials_svg {
+    position: absolute;
+    top: 31px;
+    right: 43px;
+}
+
+.intruments__svg {
+    position: absolute;
+    top: 34px;
+    right: 31px;
+}
+
+.equipment__svg {
+    position: absolute;
+    top: 31px;
+    right: 31px;
+}
+
+.sale__svg {
+    position: absolute;
+    top: 26px;
+    right: 45px;
+}
+
+.delivery__svg {
+    position: absolute;
+    top: 32px;
+    right: 31px;
+}
 /*Баннер 1*/
 
 .categories__section__banner-perforators{
@@ -702,11 +743,16 @@ header address {
     color: #000000;
 }
 
+.services__section .container {
+    display: flex;
+    flex-direction: column;
+}
+
 .services__section__wrapper {
     display: flex;
     min-height: 189px;
     margin-top: 67px;
-    background-color: lightblue;
+    /*background-color: lightblue;*/
 }
 
 .services__list {
@@ -737,13 +783,15 @@ header address {
     box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
 }
 
+
+
 .services__description__list {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
     list-style: none;
-    background-color: azure;
+    /*background-color: azure;*/
 }
 
 .services__description__list {
@@ -751,19 +799,14 @@ header address {
 }
 
 .services__description__list h3 {
+    margin: 0;
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
     line-height: 24px;
-    /* or 67% */
-
-    display: flex;
-    align-items: center;
     text-transform: uppercase;
-
     color: #32425C;
-    margin: 0;
 }
 
 .delivery__item p {
@@ -795,13 +838,11 @@ header address {
     justify-content: space-between;
     width: inherit;
     margin-top: 70px;
-    background-color: lavender;
 }
 
 .about__us__section {
     width: 450px;
     min-height: 496px;
-    background-color: lightblue;
 }
 
 .about__us__section h2 {
@@ -869,7 +910,6 @@ header address {
     display: flex;
     flex-direction: column;
     width: 301px;
-    background-color: lightblue;
 }
 
 
@@ -973,7 +1013,6 @@ footer {
     line-height: 24px;
     margin: 0;
     list-style: none;
-    /*background-color: lightblue;*/
 }
 
 .nav__top {
@@ -1107,7 +1146,6 @@ footer {
     justify-content: center;
     width: inherit;
     height: 318px;
-    /*background-color: khaki;*/
 }
 
 .popup__purchase__info{
@@ -1116,7 +1154,6 @@ footer {
     width: 460px;
     min-height: 73px;
     margin: 0 auto;
-    /*background-color: lightcoral;*/
 }
 
 .popup__purchase__info label {
@@ -1133,7 +1170,6 @@ footer {
     width: 460px;
     min-height: 146px;
     margin: 0 auto;
-    /*background-color: lightcyan;*/
 }
 
 .popup__purchase__letter label {
@@ -1148,7 +1184,6 @@ footer {
     align-items: center;
     width: inherit;
     height: 112px;
-    
     background-color: #f4f4f4;
 }
 
@@ -1571,8 +1606,6 @@ footer {
     width: 459px;
     height: inherit;
     margin-left: 140px;
-    background-color: lavenderblush;
-
 }
 
 .sorting__list {
@@ -1602,7 +1635,6 @@ footer {
     align-items: center;
     width: 354px;
     height: inherit;
-    background-color: lightblue;
 }
 
 .sorting__list.order {
@@ -1612,7 +1644,6 @@ footer {
     width: 43px;
     height: inherit;
     margin-left: 40px;
-    background-color: lightblue;
 }
 
 /*КАРТОЧКИ ТОВАРОВ*/
@@ -1949,12 +1980,6 @@ footer {
     background-color: #ffffff;
 }
 
-
-/*
-    width: 394px;
-    height: 38px;
-*/
-
 /*ПОСТРОЕНИЕ СЕТОК*/
 /*ГЛАВНАЯ*/
 
@@ -1963,31 +1988,6 @@ footer {
     justify-content: space-between;
     width: 940px;
     margin: 0 auto;
-    /*background-color: rosybrown;*/
 }
 
 
-/*ПОСТРОЕНИЕ СЕТОК*/
-/*КАТАЛОГ*/
-
-/*Для списков*/
-
-
-/*FLEX
-
-display: flex;
-justify-content: center;
-
-
-/*
-.header__nav ul {
-    display: block;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-
-font-family: "Cuprum", "Arial", sans-serif;
-font-family: "PT Sans", "Arial", sans-serif;
-*/
