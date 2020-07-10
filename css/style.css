@@ -192,7 +192,8 @@ a {
 
 /*ПОИСК: СОСТОЯНИЯ*/
 .search__field:hover {
-    background-color: #212a3a;}
+    color: #ffffff;
+}
 
 .search__field:focus {
     background-color: #ffffff;
@@ -209,15 +210,28 @@ a {
     box-sizing: border-box;
     padding-left: 43px;
     padding-right: 24px;
-    background: #161d29;
+    fill: #69717f;
+
+}
+
+/*СОСТОЯНИЯ*/
+
+.bookmarks:hover {
+    fill: #ffffff;
+}
+
+.bookmarks:active {
+    color: rgba(255, 255, 255, 0.5);
+    fill: rgba(255, 255, 255, 0.5);
+    background-color: #161d29;
 }
 
 .bookmarks__svg {
     position: absolute;
     top: 12px;
     left: 20px;
-    
 }
+
 
 .basket {
     display: flex;
@@ -229,6 +243,17 @@ a {
     padding-left: 49px;
     padding-right: 20px;
     background-color: #293449;
+    fill: #69717f;
+}
+
+.basket:hover {
+    fill: #ffffff;
+}
+
+.basket:active {
+    color: rgba(255, 255, 255, 0.5);
+    fill: rgba(255, 255, 255, 0.5);
+    background-color: #161d29;
 }
 
 .basket__svg {
@@ -243,6 +268,15 @@ a {
     align-items: center;
     width: 150px;
     height: inherit;
+    background-color: #63a63e;
+}
+
+.icon-purchase__wrapper:hover {
+    background-color: #5fbb2d;
+}
+
+.icon-purchase__wrapper:active {
+    color: rgba(255, 255, 255, 0.5);
     background-color: #63a63e;
 }
 
@@ -292,6 +326,17 @@ header address {
     padding-right: 27px;
     box-sizing: border-box;
     background-color: #ffffff;
+    fill: #c5c5c5;
+}
+
+.header__login:hover {
+    color: #EE3643;
+    fill: #3d546f;
+}
+
+.header__login:active {
+    color: #c5c5c5;
+    fill: #c5c5c5;
 }
 
 .login__svg {
@@ -310,6 +355,14 @@ header address {
     box-sizing: border-box;
     background-color: #ffffff;
 
+}
+
+.header__registration:hover {
+    color: #EE3643;
+}
+
+.header__registration:active {
+    color: #c5c5c5;
 }
 
 /*НАВИГАЦИЯ*/
@@ -355,6 +408,7 @@ header address {
 
 .header__nav a:active {
     color: rgb(255, 255, 255, 0.5);
+    background-color: #1d2739;
 }
 
 /*СЕКЦИЯ КАТЕГОРИИ*/
@@ -364,7 +418,6 @@ header address {
     width: inherit;
     height: 409px;
     margin-top: 59px;
-    /*background-color: lavender;*/
 }
 
 .categories__section h2 {
@@ -373,7 +426,6 @@ header address {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-    /*color: #ffffff;*/
     margin: 0;
 }
 
@@ -383,7 +435,6 @@ header address {
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    /*color: #ffffff;*/
     text-transform: uppercase;
 }
 
@@ -434,6 +485,14 @@ header address {
     color: #ffffff;
 }
 
+.categories__section__materials a:hover {
+    background-color: rgb(197, 197, 197, 0.3);
+}
+
+.categories__section__materials a:active {
+    background-color: rgb(168, 168, 168, 0.3);
+}
+
 .new::before {
     content: "";
     position: absolute;
@@ -461,6 +520,14 @@ header address {
     color: #ffffff;
 }
 
+.categories__section__instruments a:hover {
+    background-color: rgb(197, 197, 197, 0.3);
+}
+
+.categories__section__instruments a:active {
+    background-color: rgb(168, 168, 168, 0.3);
+}
+
 .categories__section__equipment{
     background-color: #dc91d8;
 }
@@ -476,6 +543,14 @@ header address {
     box-sizing: border-box;
     background-color: rgb(255, 255, 255, 0.3);
     color: #ffffff;
+}
+
+.categories__section__equipment a:hover {
+    background-color: rgb(197, 197, 197, 0.3);
+}
+
+.categories__section__equipment a:active {
+    background-color: rgb(168, 168, 168, 0.3);
 }
 
 .categories__section__sale { 
@@ -495,6 +570,14 @@ header address {
     color: #ffffff;
 }
 
+.categories__section__sale a:hover {
+    background-color: rgb(197, 197, 197, 0.3);
+}
+
+.categories__section__sale a:active {
+    background-color: rgb(168, 168, 168, 0.3);
+}
+
 .categories__section__delivery {
     background-color: #ffbf47;
 }
@@ -510,6 +593,14 @@ header address {
     box-sizing: border-box;
     background-color: rgb(255, 255, 255, 0.3);
     color: #ffffff;
+}
+
+.categories__section__delivery a:hover {
+    background-color: rgb(197, 197, 197, 0.3);
+}
+
+.categories__section__delivery a:active {
+    background-color: rgb(168, 168, 168, 0.3);
 }
 
 /*ИКОНКИ КАТЕГОРИЙ*/
@@ -644,6 +735,14 @@ header address {
     border: 0 none;
     border-radius: 3px;
 }
+
+.button:hover {
+    background-color: #ca2C37;
+}
+
+.button:active {
+    background-color: #ba2732;
+}   
 
 /*СЕКЦИЯ ПОПУЛЯРНЫЕ ТОВАРЫ*/
 .pop-products__section {
@@ -1804,13 +1903,11 @@ footer {
     height: 318px;
     box-sizing: border-box;
     border: 1px solid #eaeaea; 
-
-    
 }
 
 .product__card__wrapper:hover {
     border: transparent;
-    box-shadow: 0 10px 25px 0 rgb(41, 52, 73, 0.5);
+    box-shadow: 0 10px 25px 0 rgb(41, 52, 73, 0.2);
 }
 
 .product__card h3 {
@@ -1901,16 +1998,20 @@ footer {
     border-left-color: #ee3643;
 }
 
-.product__card-active {
-    display: flex;
+.product__card__active {
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 1px;
+    left: 1px;
     width: 216px;
     height: 84px;
     padding: 44px 0;
     background-color: #ffffff;
+}
+
+.product__card:hover .product__card__active {
+    display: flex;
 }
 
 .button__buy {
