@@ -962,13 +962,16 @@ header address {
     line-height: 30px;
     color: #ffffff;
     background: #32425C;
-    box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+    border-top: 1px solid #405069;
+    border-bottom: 1px solid #293449;
+
+/*    box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;*/
 }
 
 .delivery {
     background-color: #ffffff;
     color: #32425c;
-    box-shadow: none;
+    border: none;
 }
 
 
