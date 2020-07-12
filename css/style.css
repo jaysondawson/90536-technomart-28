@@ -1624,6 +1624,7 @@ footer {
 
 .account__order:hover::after {
     background-color: #ee3643;
+    z-index: 1;
 }
 
 .account__page::before {
@@ -1641,7 +1642,7 @@ footer {
     color: #ee3643;
 }
 
-.account__page:hover::after {
+.account__page:hover::before {
     background-color: #ee3643;
 }
 
