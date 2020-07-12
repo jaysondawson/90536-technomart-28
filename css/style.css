@@ -1030,6 +1030,27 @@ header address {
     background-image: url(../img/delivery.png);
 }
 
+.guarantee__item::after {
+    content: "";
+    position: absolute;
+    top: 257px;
+    right: 0;
+    width: 468px;
+    height: 261px;
+    background-image: url(../img/guarantee.png);
+}
+
+.credit__item::after {
+    content: "";
+    position: absolute;
+    top: 257px;
+    right: 0;
+    width: 468px;
+    height: 261px;
+    background-image: url(../img/credit.png);
+}
+
+
 /*СЕКЦИЯ О НАС*/
 
 .about__us_contacts__wrapper {
