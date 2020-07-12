@@ -190,6 +190,10 @@ a {
 }
 
 /*ПОИСК: СОСТОЯНИЯ*/
+
+
+
+/*
 .search__field:hover {
     color: #ffffff;
 }
@@ -198,7 +202,8 @@ a {
     background-color: #ffffff;
     color: #000000;
 }
-
+*/
+/*ЗАКЛАДКИ*/
 
 .bookmarks {
     display: flex;
@@ -635,13 +640,13 @@ header address {
 }
 /*Баннер 1*/
 
-.categories__section__banner-perforators{
+.categories__section__banner{
     position: relative;
     width: 620px;
     height: 266px;
 }
 
-.categories__section__banner-perforators::before {
+.categories__section__banner::before {
     content: "";
     position: absolute;
     top: 115px;
@@ -655,7 +660,7 @@ header address {
     z-index: 1;
 }
 
-.categories__section__banner-perforators::after {
+.categories__section__banner::after {
     content: "";
     position: absolute;
     top: 115px;
@@ -669,7 +674,8 @@ header address {
     z-index: 1;
 }
 
-.categories__section__banner-perforators h2 {
+.banner__perforators h2,
+.banner__drills h2 {
     position: absolute;
     top: 23px;
     left: 24px;
@@ -683,7 +689,8 @@ header address {
     margin: 0;
 }
 
-.categories__section__banner-perforators p {
+.banner__perforators p,
+.banner__drills p {
     position: absolute;
     top: 64px;
     left: 24px;
@@ -698,12 +705,39 @@ header address {
 
 /*Баннер 2*/
 
-.categories__section__banner-drills{
+.banner__drills{
     position: relative;
     width: 620px;
     height: 266px;
 }
 
+/*ПЕРЕКЛЮЧАТЕЛИ БАННЕРОВ*/
+
+.point-1:checked + label::before {
+    content: "";
+    position: absolute;
+    bottom: 36px;
+    left: 295px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #e5e5e5;
+    background-color: #ee3643;
+}
+
+.point-2 + label::before {
+    content: "";
+    position: absolute;
+    bottom: 36px;
+    left: 315px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #e5e5e5;
+    background-color: #e5e5e5;
+}
+
+/*КНОПКА*/
 
 .button__banner{
     position: absolute;
@@ -885,25 +919,19 @@ header address {
     flex-direction: column;
 }
 
-.services__section .container::after {
-    content: "";
-    position: absolute;
-    top: 257px;
-    right: 0;
-    width: 468px;
-    height: 261px;
-    background-image: url(../img/delivery.png);
-}
+
 
 .services__section__wrapper {
     display: flex;
     min-height: 189px;
     margin-top: 67px;
-    /*background-color: lightblue;*/
 }
+
+/*СПИСОК*/
 
 .services__list {
     display: flex;
+    position: relative;
     flex-direction: column;
     padding: 0;
     list-style: none;
@@ -911,13 +939,14 @@ header address {
 
 }
 
-.services__list a {
-    font-family: "Cuprum", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 30px;
-    color: #ffffff;
+.services__list::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 279px;
+    top: -49px;
+    right: 0;
+    background-image: url(../img/separator.png);
 }
 
 .services__item {
@@ -926,11 +955,24 @@ header address {
     width: 218px;
     height: 61px;
     padding-left: 22px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: #ffffff;
     background: #32425C;
     box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
 }
 
+.delivery {
+    background-color: #ffffff;
+    color: #32425c;
+    box-shadow: none;
+}
 
+
+/*ОПИСАНИЕ СЕРВИСОВ*/
 
 .services__description__list {
     display: flex;
@@ -938,7 +980,6 @@ header address {
     padding: 0;
     margin: 0;
     list-style: none;
-    /*background-color: azure;*/
 }
 
 .services__description__list {
@@ -976,6 +1017,17 @@ header address {
     min-height: 38px;
     padding-left: 44.5px;
     padding-right: 44.5px;
+}
+
+
+.delivery__item::after {
+    content: "";
+    position: absolute;
+    top: 257px;
+    right: 0;
+    width: 468px;
+    height: 261px;
+    background-image: url(../img/delivery.png);
 }
 
 /*СЕКЦИЯ О НАС*/
@@ -1595,6 +1647,16 @@ footer {
 
 /*ЗАГОЛОВОК*/
 
+.catalog__header {
+    display: flex;
+    align-items: center;
+    width: 940px;
+    height: 89px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #f2f6f8;
+}
+
 .catalog__header h2{
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
@@ -1605,7 +1667,6 @@ footer {
     color: #32425c;
     margin: 0;
     margin-left: 29px;
-    margin-top: 49px;
 }
 
 
@@ -1614,7 +1675,7 @@ footer {
 .catalog__filters {
     width: 220px;
     height: 720px;
-    margin-top: 50px;
+    margin: 0;
     padding: 0;
     border: 0 none;
 }
@@ -1637,7 +1698,6 @@ footer {
     line-height: 18px;
     text-transform: uppercase;
     color: #000000;
-    border-radius: 3px;
     margin: 0;
     padding-left: 18px;
     background-color: #f7f3ec;
@@ -1711,7 +1771,9 @@ footer {
     background-image: url(../img/svg-technomart/checkbox-off.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.2;
 }
+
 
 .filter__checkbox:checked + span::before {
     content: "";
@@ -1723,7 +1785,16 @@ footer {
     background-image: url(../img/svg-technomart/checkbox-on.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.2;
 }
+
+.filter__checkbox:hover + span::before {
+    opacity: 0.3;
+}
+
+.filter__checkbox:disabled + span::before{
+    opacity: 0.1;
+} 
 
 /*ЦЕНА*/
 .range__picker__wrapper {
@@ -1841,6 +1912,7 @@ footer {
     background-image: url(../img/svg-technomart/radio-off.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.2;
 }
 
 .filter__radio:checked + span::before {
@@ -1853,8 +1925,12 @@ footer {
     background-image: url(../img/svg-technomart/radio-on.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.2;
 }
 
+.filter__radio:hover + span::before {
+    opacity: 0.3;
+}
 
 /*КНОПКА*/
 
@@ -1897,10 +1973,8 @@ footer {
     align-items: center;
     width: 700px;
     height: 38px;
-    margin-top: 50px;
     padding: 0;
     background-color: #f7f3ec;
-    border-radius: 3px;
 }
 
 .sorting__container h2 {
@@ -2382,6 +2456,11 @@ footer {
     margin-left: 10px;
     color: #000000;
     background-color: #ffffff;
+}
+
+.button__back:hover {
+    background-color: #ffffff;
+    color: #c5c5c5;
 }
 
 /*ПОСТРОЕНИЕ СЕТОК*/

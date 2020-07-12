@@ -139,16 +139,31 @@
             </div>
           </div>
           <div class="categories__section__list-2">
-            <div class="categories__section__banner-perforators">
-              <h2>Перфораторы</h2>
-              <p>Настоящие мужские игрушки</p>
-              <img src="img/slider-1.jpg" width="620" height="266" alt="Баннер Перфораторы">
+            
+            <div class="categories__section__banner">
+              <div class="banner__perforators visually-hidden">
+                <h2>Перфораторы</h2>
+                <p>Настоящие мужские игрушки</p>
+                <img src="img/slider-1.jpg" width="620" height="266" alt="Баннер Перфораторы">
+              </div>
+              <div class="banner__drills visually-hidden">
+                <h2>Дрели</h2>
+                <p>Соседям на радость!</p>
+                <img src="img/slider-2.jpg" width="620" height="266" alt="Баннер Дрели">
+              </div>
               <form method="POST" action="https://echo.htmlacademy.ru">
                 <input class="visually-hidden" type="submit" value="" aria-label="Кнопка баннера влево">
                 <input class="visually-hidden"  type="submit" value="" aria-label="Кнопка баннера вправо">
               </form>
+              <form action="https://echo.htmlacademy.ru" method="GET">
+                <input type="radio" class="point-1 visually-hidden" id="point-1" checked>
+                <label for="point-1" aria-label="Показать Банер с перфораторами"></label>
+                <input type="radio" class="point-2 visually-hidden" id="point-1">
+                <label for="point-2" aria-label="Показать Банер с дрелями"></label>
+              </form>
               <a href="catalog.html" class="button button__banner"><span>Открыть каталог</span></a>
             </div>
+
             <div class="categories__section__vertical-section">
               <div class="categories__section__sale">
                 <h2>Скидки 50%</h2>
@@ -344,20 +359,17 @@
             <div class="services__section__wrapper">
               <ul class="services__list">
                 <li>
-                  <input class="service__toggle visually-hidden" type="radio">
-                  <a  class="services__item" href="#">Доставка</a>
+                  <a  class="services__item delivery" href="#">Доставка</a>
                 </li>
                 <li>
-                  <input class="service__toggle visually-hidden" type="radio">
-                  <a class="services__item" href="#">Гарантия</a>
+                  <a class="services__item garantee" href="#">Гарантия</a>
                 </li>
                 <li>
-                  <input class="service__toggle visually-hidden" type="radio">
-                  <a  class="services__item" href="#">Кредит</a>
+                  <a  class="services__item credit" href="#">Кредит</a>
                 </li>
               </ul>
               <ul class="services__description__list">
-                <li class="delivery__item visually-hidden">
+                <li class="delivery__item">
                   <h3>Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо 
                     к вашему подъезду совершенно бесплатно! <br>
@@ -371,7 +383,7 @@
                     вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
                     Дом уж восстановите как-нибудь сами.</p>
                 </li>
-                <li class="credit__item">
+                <li class="credit__item visually-hidden">
                   <h3>Кредит</h3>
                   <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
                   <a href="#" class="button credit__button">
@@ -530,7 +542,7 @@
     </footer>
 
     <!--МОДАЛЬНОЕ ОКНО ЗАКАЗ-->
-    <div class="container">
+    <div class="container visually-hidden">
       <section class="index popup__purchase">
         <h2 class="visually-hidden">Оформить заказ</h2>
         <form method="POST" action="https://echo.htmlacademy.ru">
@@ -565,7 +577,7 @@
     </div>
 
     <!--МОДАЛЬНОЕ ОКНО КАРТА-->
-    <div class="container">
+    <div class="container visually-hidden">
       <section class="index popup__map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <button class="popup__map__close" aria-label="Кнопка закрытия всплывающего окна карты"></button>
