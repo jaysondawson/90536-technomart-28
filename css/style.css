@@ -1588,13 +1588,8 @@ footer {
     margin-top: 7px;
 }
 
-.account__settings a:hover {
-    color: #ee3643;
-}
 
-.account__settings a:active  {
-    color: #c5c5c5;
-}
+
 
 .account__order {
     margin-left: 44px;
@@ -1603,6 +1598,7 @@ footer {
 
 .account__order,
 .account__page {
+    position: relative;
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1611,15 +1607,44 @@ footer {
     color: #32425c;
 }
 
-.account__separator {
+.account__order::after {
     position: absolute;
-    left: 133px;
+    content: "";
     top: 6px;
+    left: 88px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background-color: #32425c;
 }
+
+.account__order:hover {
+    color: #ee3643;
+}
+
+.account__order:hover::after {
+    background-color: #ee3643;
+}
+
+.account__page::before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: -19px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #32425c;
+}
+
+.account__page:hover {
+    color: #ee3643;
+}
+
+.account__page:hover::after {
+    background-color: #ee3643;
+}
+
 
 /*ХЛЕБНЫЕ КРОШКИ*/
 
