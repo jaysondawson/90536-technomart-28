@@ -706,6 +706,7 @@ header address {
 /*Баннер 2*/
 
 .banner__drills{
+    display: none;
     position: relative;
     width: 620px;
     height: 266px;
