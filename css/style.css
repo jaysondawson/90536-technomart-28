@@ -200,6 +200,10 @@ a {
     background-image: url(../img/svg-technomart/icon-search-hover.svg);
 }
 
+.search__field:active .search__button {
+    background-image: url(../img/svg-technomart/icon-search-active.svg);
+}
+
 /*ЗАКЛАДКИ*/
 
 .bookmarks {
