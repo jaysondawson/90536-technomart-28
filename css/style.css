@@ -204,6 +204,11 @@ a {
     background-image: url(../img/svg-technomart/icon-search-active.svg);
 }
 
+.search__field:focus + .search-button {
+    background-image: url(../img/svg-technomart/icon-search-active.svg);
+    background-repeat: no-repeat;
+}
+
 /*ЗАКЛАДКИ*/
 
 .bookmarks {
@@ -2038,8 +2043,8 @@ footer {
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 13px;
+    line-height: 18px;
     text-transform: uppercase;
     color: #000000;
     margin-left: 19px;
@@ -2107,7 +2112,7 @@ footer {
     align-items: center;
     width: 43px;
     height: inherit;
-    margin-left: 25px;
+    margin-left: 50px;
     color: #c0bdB8;
 }
 
