@@ -640,7 +640,7 @@ header address {
     background-color: rgb(168, 168, 168, 0.3);
 }
 
-.new::after {
+.new {
     content: "new";
     position: absolute;
     top: 8px;
