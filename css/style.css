@@ -640,34 +640,16 @@ header address {
     background-color: rgb(168, 168, 168, 0.3);
 }
 
-.new {
-    content: "new";
+.new::after {
+    content: "";
     position: absolute;
-    top: 8px;
-    right: -26px;
-    font-family: "Cuprum", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    background-color: #ee3643;
-    color: #ffffff;
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    width: 102px;
-    height: 30px;
+    top: 0px;
+    right: 0px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/icon-new-flag.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
     z-index: 2;
 }
 
@@ -2646,7 +2628,6 @@ footer {
     position: relative;
     width: 220px;
     height: 318px;
-    overflow: hidden;
 }
 
 
